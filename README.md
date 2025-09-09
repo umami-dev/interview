@@ -1,24 +1,19 @@
-# README
+# Interview Rails App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Minimal Ruby on Rails API with `/pricing` endpoint.
 
-Things you may want to cover:
+## Setup
 
-* Ruby version
+```bash
+bundle install
+rails s -p 8080
+```
 
-* System dependencies
+## Test the API
 
-* Configuration
+```bash
+curl 'localhost:8080/pricing?period=summer&hotel=FloatingPointResort&room=SingletonRoom'
+# response
+{ "rate" : "12000" }
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
