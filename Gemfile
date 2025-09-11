@@ -37,5 +37,8 @@ end
 group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+
+  # Live reloading for development
+  gem "listen", "~> 3.3"
 end
 
