@@ -22,17 +22,16 @@ RUN apk add --no-cache \
     sqlite \
     tzdata
 
-# Install application gems
-COPY Gemfile ./
-RUN bundle install
-
-# Copy application code
-COPY . .
-
 # Create a non-root user for development
 RUN adduser -D -s /bin/sh rails && \
-    chown -R rails:rails /rails
+    chown -R rails:rails /rails /usr/local/bundle
 USER rails:rails
+
+# Install application gems
+COPY Gemfile /rails/
+COPY Gemfile.lock /rails/
+WORKDIR /rails
+RUN bundle install --gemfile=/rails/Gemfile
 
 # Start the server by default, this can be overwritten at runtime
 EXPOSE 3000
