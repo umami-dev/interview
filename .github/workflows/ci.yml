@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+
+    - name: Build Docker image
+      uses: docker/build-push-action@v5
+      with:
+        context: .
+        push: false
+        tags: interview-app:test
+        cache-from: type=gha
+        cache-to: type=gha,mode=max
+
+    - name: Run all tests
+      run: |
+        echo "Running all Rails tests..."
+        docker run --rm \
+          -v $(pwd):/rails \
+          -w /rails \
+          interview-app:test \
+          ./bin/rails test
+
+    - name: Test API endpoint
+      run: |
+        echo "Testing API endpoint..."
+        # Start the container in background
+        docker run -d --name test-container -p 3000:3000 interview-app:test
+
+        # Wait for the server to start
+        sleep 10
+
+        # Test the pricing endpoint
+        curl -f "http://localhost:3000/pricing?period=Summer&hotel=FloatingPointResort&room=SingletonRoom" || exit 1
+
+        # Clean up
+        docker stop test-container
+        docker rm test-container
