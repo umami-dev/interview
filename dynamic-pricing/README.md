@@ -7,6 +7,8 @@
 Welcome to the Tripla backend engineering take-home assignment\! 🧑‍💻 This exercise is designed to simulate a real-world problem you might encounter as part of our team.
 
 
+*Before you start please take a look at the [FAQ section](/README.md#frequently-asked-questions)*
+
 ## The Challenge
 
 At Tripla, we use a dynamic pricing model for hotel rooms. Instead of static, unchanging rates, our model uses a real-time algorithm to adjust prices based on market demand and other data signals. This helps us maximize both revenue and occupancy.

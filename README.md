@@ -6,7 +6,7 @@
 
 Welcome\! This repository contains the take-home assignments we use for our technical hiring process at Tripla. Each exercise is designed to give you a feel for the kind of challenges we work on every day.
 
-## Frequently Asked Questions (FAQ)
+## Frequently Asked Questions
 
 ### Which assignment should I work on?
 
