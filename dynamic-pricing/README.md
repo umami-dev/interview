@@ -52,7 +52,7 @@ The project scaffold is a minimal Ruby on Rails application with a `/pricing` en
 
 The provided `Dockerfile` builds a container with all necessary dependencies. Your local code is mounted directly into the container, so any changes you make on your machine will be reflected immediately. Your application will need to communicate with the external pricing model, which also runs in its own Docker container.
 
-## Quick Start Guide
+### Quick Start Guide
 
 Here is a list of common commands for building, running, and interacting with the Dockerized environment.
 
