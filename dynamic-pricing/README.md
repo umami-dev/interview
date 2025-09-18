@@ -1,8 +1,10 @@
+<div align="center">
+   <img src="/img/logo.svg?raw=true" width=300 style="background-color:white;">
+</div>
 # Backend Engineering Take-Home Assignment: Dynamic Pricing Proxy
 
 Welcome to the Tripla backend engineering take-home assignment\! 🧑‍💻 This exercise is designed to simulate a real-world problem you might encounter as part of our team.
 
------
 
 ## The Challenge
 
