@@ -16,9 +16,13 @@ If you are unsure which one to work on, please contact our talent acquisition te
 
 ### How do I submit my solution?
 
-1.  Push your code to a personal repository. GitHub or GitLab are preferred.
-2.  The repository must be public. This is a strict requirement so our team can review your code without needing to create a new account.
-3.  Email the link to your repository to the person who sent you the assignment.
+Please follow these steps to submit your work:
+
+1.  **Create a new, public repository** on your personal GitHub or GitLab account.
+2.  **Copy the assignment code** into your new repository. You can do this by cloning our repository and pushing it to your new one, or by downloading the code as a ZIP and committing it.
+3.  **Email the link** to your personal repository to the person who sent you the assignment.
+
+**Important:** Please **do not fork our repository or open a pull request**. We use pull requests to manage and update the assignments, not to review candidate submissions.
 
 ### What happens after I submit?
 

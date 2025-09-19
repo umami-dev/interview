@@ -6,8 +6,7 @@
 
 Welcome to the Tripla backend engineering take-home assignment\! 🧑‍💻 This exercise is designed to simulate a real-world problem you might encounter as part of our team.
 
-
-**Before you start please take a look at the [FAQ section](/README.md#frequently-asked-questions).**
+⚠️ **Before you begin**, please review the main [FAQ](/README.md#frequently-asked-questions). It contains important information, **including our specific guidelines on how to submit your solution.**
 
 ## The Challenge
 
