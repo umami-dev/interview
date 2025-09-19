@@ -4,7 +4,7 @@
 
 # Backend Engineering Take-Home Assignment: Dynamic Pricing Proxy
 
-Welcome to the Tripla backend engineering take-home assignment 🧑‍💻 This exercise is designed to simulate a real-world problem you might encounter as part of our team.
+Welcome to the Tripla backend engineering take-home assignment\! 🧑‍💻 This exercise is designed to simulate a real-world problem you might encounter as part of our team.
 
 
 **Before you start please take a look at the [FAQ section](/README.md#frequently-asked-questions).**
@@ -86,4 +86,4 @@ docker container exec -it interview-dev ./bin/rails test test/controllers/pricin
 ```
 
 
-Good luck, and we look forward to seeing what you build
+Good luck, and we look forward to seeing what you build\!
