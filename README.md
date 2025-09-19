@@ -1,106 +1,46 @@
-# Interview Rails App
+<div align="center">
+   <img src="/img/logo.svg?raw=true" width=600 style="background-color:white;">
+</div>
 
-Minimal Ruby on Rails API with `/pricing` endpoint.
+# Tripla Engineering: Take-Home Assignments
 
-## Development with Docker
+Welcome\! This repository contains the take-home assignments we use for our technical hiring process at Tripla. Each exercise is designed to give you a feel for the kind of challenges we work on every day.
 
-This project is configured for Docker-based development with live reloading.
+## Frequently Asked Questions
 
-### Prerequisites
+### Which assignment should I work on?
 
-- Docker installed on your system
-- Git (for cloning the repository)
+Please do not work on all of them. Your hiring manager will send you a direct link to the specific assignment you should complete.
 
-### Quick Start
+If you are unsure which one to work on, please contact our talent acquisition team before you begin.
 
-1. **Clone and navigate to the project:**
-   ```bash
-   git clone https://github.com/umami-dev/interview.git
-   cd interview
-   ```
+### How do I submit my solution?
 
-2. **Build the Docker image:**
-   ```bash
-   docker build -t interview-app .
-   ```
+1.  Push your code to a personal repository. GitHub or GitLab are preferred.
+2.  The repository must be public. This is a strict requirement so our team can review your code without needing to create a new account.
+3.  Email the link to your repository to the person who sent you the assignment.
 
-3. **Run the development container:**
-   ```bash
-   docker run -p 3000:3000 -v $(pwd):/rails interview-app
-   ```
+### What happens after I submit?
 
-4. **Access the application:**
-   - Open http://localhost:3000 in your browser
-   - The Rails server will start automatically
+Once you submit, our engineering team will review your solution. We will always provide you with feedback on your submission. If your solution aligns well with the role, we will contact you to schedule a follow-up interview to walk through your code with you.
 
-### Development Features
+### I have an idea for a feature. Should I build it?
 
-- ✅ **Live Reloading**: Changes to your code are immediately reflected
-- ✅ **Volume Mounting**: Your local code is mounted into the container
-- ✅ **Development Gems**: All development dependencies are available
-- ✅ **Database**: SQLite database is automatically prepared
-- ✅ **Hot Reloading**: No need to restart the container for code changes
+That's up to you. We intentionally leave the problems open-ended to see how you make product and engineering decisions.
 
-### Available Commands
+However, the priority should always be a simple, robust, and well-tested solution to the core problem. If a new feature feels like it would take several hours or days to implement, it's likely out of scope and not essential.
 
-```bash
-# Build the Docker image
-docker build -t interview-app .
+### Is it okay to share my solution publicly?
 
-# Run the development container
-docker run -p 3000:3000 -v $(pwd):/rails --name interview-dev interview-app
+Yes, absolutely. You put in the time, so you own the code. It's completely reasonable for you to keep your solution and use it as you see fit. The real value for us is in the process and the conversation around your submission.
 
-# Run in background
-docker run -d -p 3000:3000 -v $(pwd):/rails --name interview-dev interview-app
+### The requirements seem ambiguous. What should I do?
 
-# Run all tests (assuming container is running)
-docker container exec -it interview-dev ./bin/rails test
-# Run a specific file
-docker container exec -it interview-dev ./bin/rails test test/controllers/pricing_controller_test.rb
-# Run a specific test method
-docker container exec -it interview-dev ./bin/rails test test/controllers/pricing_controller_test.rb -n test_should_get_pricing_with_all_parameters
+That's often intentional\! We want to see how you handle ambiguity and make design choices when the path isn't perfectly clear.
 
-# Run Rails commands in the container
-docker container exec -it interview-dev ./bin/rails console
-docker container exec -it interview-dev ./bin/rails db:migrate
-docker container exec -it interview-dev bundle install
+Our preference is that you make a reasonable assumption, document it in your `README`, and move forward. There's no wrong answer in these situations. If you feel completely blocked, don't hesitate to email us, and we'll be happy to provide clarification.
 
-# Stop the container
-docker stop interview-dev
+### Why a take-home assignment?
 
-# Remove the container
-docker rm interview-dev
-```
+This assignment is a practical way for us to see your problem-solving skills on a realistic challenge. It's also a chance for you to see the kind of work we do and decide if it's a good fit. We use your submission as the starting point for a technical conversation in our follow-up interview.
 
-### Project Structure
-
-```
-interview/
-├── app/
-│   ├── controllers/
-│   │   └── pricing_controller.rb    # Main API controller
-│   └── models/
-├── config/
-│   ├── routes.rb                    # API routes
-│   └── database.yml                 # Database configuration
-├── Dockerfile                       # Development Docker configuration
-└── Gemfile                         # Ruby dependencies
-```
-
-### API Endpoints
-
-#### Pricing Endpoint
-
-```bash
-curl 'http://localhost:3000/pricing?period=Summer&hotel=FloatingPointResort&room=SingletonRoom'
-```
-
-**Response:**
-```json
-{ "rate": "12000" }
-```
-
-**Parameters:**
-- `period`: Pricing period - must be one of: "Summer", "Autumn", "Winter", "Spring"
-- `hotel`: Hotel name - must be one of: "FloatingPointResort", "GitawayHotel", "RecursionRetreat"
-- `room`: Room type - must be one of: "SingletonRoom", "BooleanTwin", "RestfulKing"
