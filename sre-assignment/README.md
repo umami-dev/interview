@@ -8,6 +8,8 @@
 - `terraform/` : Terraform code (intentionally imperfect) for an EKS cluster and an S3 bucket .
 - `helm/` : A Helm chart (intentionally buggy) that deploys an API service .
 
+⚠️ **Before you begin**, please review the main [FAQ](/README.md#frequently-asked-questions). It contains important information, **including our specific guidelines on how to submit your solution.**
+
 ## Candidate Tasks
 ### Create `Terraform-Parse` Service
 1. Please Create a backend service to render an API request into terraform file
