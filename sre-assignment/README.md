@@ -1,3 +1,7 @@
+<div align="center">
+   <img src="/img/logo.svg?raw=true" width=600 style="background-color:white;">
+</div>
+
 # SRE Technical Assignment (Terraform + Helm)
 
 ## Overview
