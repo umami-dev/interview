@@ -39,6 +39,7 @@
 8. Debug and fix if you find services don't route properly.
 9. Improve other aspects as you see fit.
 
-## Deliverables
-- Updated code in your own GitHub repository.
-- `NOTES.md` with explanations for API service creation, Terraform fixes, Helm fixes, multi-env thoughts, and any AI usage.
+## Minimum Deliverables
+1.  A link to your Git repository containing the complete solution.
+2.  Clear instructions in the `README.md` on how to build, test, and run your service.
+3. `NOTES.md` with explanations for API service creation, Terraform fixes, Helm fixes, multi-env thoughts, and any AI usage.
