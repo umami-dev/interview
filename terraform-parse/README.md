@@ -2,13 +2,15 @@
    <img src="/img/logo.svg?raw=true" width=600 style="background-color:white;">
 </div>
 
-# SRE Technical Assignment (Terraform + Helm)
+# SRE Technical Take-Home Assignment : Terraform-Parse (Terraform + Helm)
 
-## Overview
-- `terraform/` : Terraform code (intentionally imperfect) for an EKS cluster and an S3 bucket .
-- `helm/` : A Helm chart (intentionally buggy) that deploys an API service .
+Welcome to the Tripla SRE take-home assignment! 🧑‍💻 This exercise is designed to simulate a real-world scenario where you'll tackle challenges across infrastructure, platform engineering, and automation.
 
 ⚠️ **Before you begin**, please review the main [FAQ](/README.md#frequently-asked-questions). It contains important information, **including our specific guidelines on how to submit your solution.**
+
+## Repo structure
+- `terraform/` : Terraform code (intentionally imperfect) for an EKS cluster and an S3 bucket .
+- `helm/` : A Helm chart (intentionally buggy) that deploys an API service .
 
 ## Candidate Tasks
 ### Create `Terraform-Parse` Service
