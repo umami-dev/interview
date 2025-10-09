@@ -24,6 +24,16 @@ Please follow these steps to submit your work:
 
 **Important:** Please **do not fork our repository or open a pull request**. We use pull requests to manage and update the assignments, not to review candidate submissions.
 
+### Can I use an AI assistant or LLM to help with the assignment?
+
+Up to you. Our goal is to see how you solve problems in a real-world setting. If LLMs are part of your standard workflow, you are welcome to use them.
+
+However, If you use an AI assistant, please document its usage in your `README.md`, including:
+1.  Which parts of the solution were developed with AI assistance.
+2.  A description of the tools and your workflow.
+
+We are interested in how you leverage modern tools to build great software.
+
 ### What happens after I submit?
 
 Once you submit, our engineering team will review your solution. We will always provide you with feedback on your submission. If your solution aligns well with the role, we will contact you to schedule a follow-up interview to walk through your code with you.
