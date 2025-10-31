@@ -12,7 +12,6 @@ provider "aws" {
   region = var.aws_region
 }
 
-# Intentionally simplistic EKS module usage (hardcoded values)
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
   version = "19.0.0"
@@ -33,10 +32,9 @@ module "eks" {
   }
 }
 
-# Buggy S3 bucket (hardcoded name, public ACL, no lifecycle)
 resource "aws_s3_bucket" "static_assets" {
-  bucket = "tripla-static-assets" # hardcoded
-  acl    = "public-read"          # insecure
+  bucket = "tripla-static-assets"
+  acl    = "public-read"
   tags = {
     Env = var.environment
   }

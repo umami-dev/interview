@@ -3,7 +3,7 @@ replicaCount: 1
 frontend:
   image:
     repository: nginx
-    tag: latest   # should be parameterized; 'latest' is discouraged
+    tag: latest
   service:
     type: LoadBalancer
     port: 80
@@ -16,4 +16,4 @@ backend:
     type: ClusterIP
     port: 8080
 
-resources: {} # intentionally empty
+resources: {}
