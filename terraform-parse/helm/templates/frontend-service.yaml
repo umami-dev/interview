@@ -8,4 +8,4 @@ spec:
     - port: 80
       targetPort: 80
   selector:
-    app: frontend   # doesn't match frontend-app label used in deployment
+    app: frontend
