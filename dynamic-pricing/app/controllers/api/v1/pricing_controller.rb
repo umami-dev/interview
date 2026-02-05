@@ -10,7 +10,6 @@ class Api::V1::PricingController < ApplicationController
     hotel  = params[:hotel]
     room   = params[:room]
 
-    # TODO: Start to implement here
     service = Api::V1::PricingService.new(period:, hotel:, room:)
     service.run
     if service.valid?
