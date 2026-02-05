@@ -30,11 +30,9 @@ Up to you. Our goal is to see how you solve problems in a real-world setting. If
 
 However, please ensure you fully understand the code you submit. Regardless of how the code was generated, we expect you to be able to explain the implementation details, design choices, and logic in depth during the follow-up interview.
 
-If you use an AI assistant, please understand that we will expect you to fully understand the assignment, you cannot outsource  document its usage in your `README.md`, including:
+If you use an AI assistant, please document its usage in your `README.md`, including:
 1.  Which parts of the solution were developed with AI assistance.
 2.  A description of the tools and your workflow.
-
-We are interested in how you leverage modern tools to build great software.
 
 ### What happens after I submit?
 
@@ -80,7 +78,7 @@ Write meaningful tests. At Tripla, we do not deploy code unless we are certain i
 
 Be intentional with your design. We want to see how you navigate the solution space. Before writing code, think through the trade-offs of different approaches and choose the one that best fits the constraints. Your solution should reflect a series of deliberate choices rather than the first idea that came to mind.
 
-Production-ready does not mean FANG-scale. You do not need to build a system that handles billions of requests. To us, production-ready means:
+Production-ready does not mean FAANG-scale. You do not need to build a system that handles billions of requests. To us, production-ready means:
 
 * Your code works, implements all requirements, and handles failures gracefully.
 * You include structured logging, metrics, or traces.
