@@ -56,6 +56,12 @@ We strongly prefer that you solve the assignment in the language provided.
 The goal is to give you a realistic feel for the technology stack you would be working with at Tripla. We understand that you may not be immediately proficient in this specific language, and we do not expect syntax perfection. We are more interested in seeing how you adapt to a new environment.
 
 Because of this, our review and the follow-up interview will focus on core engineering skills rather than language trivia. 
+
+### The assignment uses specific libraries. Can I change them?
+Yes, absolutely. It is up to you to choose the best tool for the job. Feel free to update, remove, or replace any of the included dependencies.
+
+Just be prepared to discuss your thought process behind the decision. We are interested in knowing why you prefer one tool over another and how it impacts the quality or maintainability of your solution.
+
 ### The requirements seem ambiguous. What should I do?
 
 That's often intentional\! We want to see how you handle ambiguity and make design choices when the path isn't perfectly clear.
