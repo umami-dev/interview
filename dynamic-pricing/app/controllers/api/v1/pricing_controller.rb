@@ -1,4 +1,4 @@
-class PricingController < ApplicationController
+class Api::V1::PricingController < ApplicationController
   VALID_PERIODS = %w[Summer Autumn Winter Spring].freeze
   VALID_HOTELS = %w[FloatingPointResort GitawayHotel RecursionRetreat].freeze
   VALID_ROOMS = %w[SingletonRoom BooleanTwin RestfulKing].freeze
@@ -11,7 +11,13 @@ class PricingController < ApplicationController
     room   = params[:room]
 
     # TODO: Start to implement here
-    render json: { rate: "12000" }
+    service = Api::V1::PricingService.new(period:, hotel:, room:)
+    service.run
+    if service.valid?
+      render json: { rate: service.result }
+    else
+      render json: { error: service.errors.join(', ') }, status: :bad_request
+    end
   end
 
   private
