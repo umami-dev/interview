@@ -28,7 +28,9 @@ Please follow these steps to submit your work:
 
 Up to you. Our goal is to see how you solve problems in a real-world setting. If LLMs are part of your standard workflow, you are welcome to use them.
 
-However, If you use an AI assistant, please document its usage in your `README.md`, including:
+However, please ensure you fully understand the code you submit. Regardless of how the code was generated, we expect you to be able to explain the implementation details, design choices, and logic in depth during the follow-up interview.
+
+If you use an AI assistant, please understand that we will expect you to fully understand the assignment, you cannot outsource  document its usage in your `README.md`, including:
 1.  Which parts of the solution were developed with AI assistance.
 2.  A description of the tools and your workflow.
 
