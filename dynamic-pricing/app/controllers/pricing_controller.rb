@@ -11,7 +11,8 @@ class PricingController < ApplicationController
     room   = params[:room]
 
     # TODO: Start to implement here
-    render json: { rate: "12000" }
+    rate = RateApiClient.get_rate()
+    render json: { rate: rate }
   end
 
   private
