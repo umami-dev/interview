@@ -72,3 +72,26 @@ Our preference is that you make a reasonable assumption, document it in your `RE
 
 This assignment is a practical way for us to see your problem-solving skills on a realistic challenge. It's also a chance for you to see the kind of work we do and decide if it's a good fit. We use your submission as the starting point for a technical conversation in our follow-up interview.
 
+### How can I make my submission stand out?
+
+We appreciate it when candidates go the extra mile to show their engineering depth, but we have seen past candidates shoot themselves in the foot by focusing on the wrong things. To do well, focus on the following core principles.
+
+Write meaningful tests. At Tripla, we do not deploy code unless we are certain it works. Simply having a suite of automated tests is not enough. We want to see that you truly understand the problem by identifying implicit or ambiguous requirements and edge cases, then designing tests that uncover implementation issues.
+
+Be intentional with your design. We want to see how you navigate the solution space. Before writing code, think through the trade-offs of different approaches and choose the one that best fits the constraints. Your solution should reflect a series of deliberate choices rather than the first idea that came to mind.
+
+Production-ready does not mean FANG-scale. You do not need to build a system that handles billions of requests. To us, production-ready means:
+
+* Your code works, implements all requirements, and handles failures gracefully.
+* You include structured logging, metrics, or traces.
+* You chose the most straightforward path and avoided over-engineering.
+* Your code is readable and follows established conventions in the existing codebase.
+* You understand and can articulate the strengths and weaknesses of your implementation.
+
+Keep a clean git history. Avoid submitting your work as a single, massive commit. We prefer to see a series of small, iterative commits that show how you logically built the solution over time. This helps us follow your thought process.
+
+Include a helpful README. A great README makes it easy for us to review your work. Use it to showcase your reasoning, document how to run and test the code, and highlight any assumptions you made.
+
+Code defensively. The real world is unreliable. Validate your inputs, handle failure states explicitly, and never assume that an external API will always return a successful response. Thinking about risks and mitigating them in code is a key trait we look for.
+
+If you use AI tools, be careful. Historically, we have found that coding assistants perform poorly on these specific assignments. They often miss the nuance required to solve the problem correctly. Remember that you are responsible for every line of code you submit.
