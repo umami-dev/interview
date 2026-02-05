@@ -50,6 +50,12 @@ However, the priority should always be a simple, robust, and well-tested solutio
 
 Yes, absolutely. You put in the time, so you own the code. It's completely reasonable for you to keep your solution and use it as you see fit. The real value for us is in the process and the conversation around your submission.
 
+### The assignment uses a specific language. Can I solve it in a different one?
+We strongly prefer that you solve the assignment in the language provided.
+
+The goal is to give you a realistic feel for the technology stack you would be working with at Tripla. We understand that you may not be immediately proficient in this specific language, and we do not expect syntax perfection. We are more interested in seeing how you adapt to a new environment.
+
+Because of this, our review and the follow-up interview will focus on core engineering skills rather than language trivia. 
 ### The requirements seem ambiguous. What should I do?
 
 That's often intentional\! We want to see how you handle ambiguity and make design choices when the path isn't perfectly clear.
