@@ -28,7 +28,7 @@ Welcome to the Tripla SRE take-home assignment! 🧑‍💻 This exercise is des
     }
     }
     ```
-3. Parse this payload and render to Terraform file (.tf) for S3 bucket creation. Resources created should at least include:
+3. Parse this payload and and programmatically generate a valid Terraform configuration file (.tf) for S3 bucket creation. Resources created should at least include:
     - provider
     - aws_s3_bucket
     - aws_s3_bucket_acl
@@ -39,7 +39,7 @@ Welcome to the Tripla SRE take-home assignment! 🧑‍💻 This exercise is des
 6. Adjust or refactor be safe and maintainable for multiple environments.
 
 ### Platform (Kubernetes + Helm)
-7. You are provided a set of Helm code. Please review and deploy `Terraform-Parse` service into a Kubernetes cluster (local kind/minikube is fine).
+7. You are provided a set of Helm code. Please review and deploy `Terraform-Parse` service into a Kubernetes cluster using the provided Helm setup (local kind/minikube is fine).
 8. Debug and fix if you find services don't route properly.
 9. Improve other aspects as you see fit.
 
