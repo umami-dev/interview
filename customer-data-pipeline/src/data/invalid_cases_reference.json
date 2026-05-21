@@ -1,0 +1,170 @@
+[
+  {
+    "source_id": "000052",
+    "source_type": "opera",
+    "invalid_type": "A",
+    "reason": "Invalid email format: 'notanemail'",
+    "expected_behavior": "excluded from sync-ready output"
+  },
+  {
+    "source_id": "000058",
+    "source_type": "opera",
+    "invalid_type": "A",
+    "reason": "Invalid email format: '@nodomain.com'",
+    "expected_behavior": "excluded from sync-ready output"
+  },
+  {
+    "source_id": "000180",
+    "source_type": "bv_manager",
+    "invalid_type": "A",
+    "reason": "Invalid email format: 'missingat.example.com'",
+    "expected_behavior": "excluded from sync-ready output"
+  },
+  {
+    "source_id": "000200",
+    "source_type": "nehops",
+    "invalid_type": "A",
+    "reason": "Invalid email format: 'double@@example.com'",
+    "expected_behavior": "excluded from sync-ready output"
+  },
+  {
+    "source_id": "000380",
+    "source_type": "nehops",
+    "invalid_type": "A",
+    "reason": "Invalid email format: 'spaces in@email.com'",
+    "expected_behavior": "excluded from sync-ready output"
+  },
+  {
+    "source_id": "000066",
+    "source_type": "bv_manager",
+    "invalid_type": "B1",
+    "reason": "Email 'dup.member1@example.com' is duplicated across source_id 000066 and 000089",
+    "expected_behavior": "both records excluded from sync-ready output"
+  },
+  {
+    "source_id": "000089",
+    "source_type": "nehops",
+    "invalid_type": "B1",
+    "reason": "Email 'dup.member1@example.com' is duplicated across source_id 000066 and 000089",
+    "expected_behavior": "both records excluded from sync-ready output"
+  },
+  {
+    "source_id": "000109",
+    "source_type": "opera",
+    "invalid_type": "B1",
+    "reason": "Email 'dup.member2@test.co.jp' is duplicated across source_id 000109 and 000121",
+    "expected_behavior": "both records excluded from sync-ready output"
+  },
+  {
+    "source_id": "000121",
+    "source_type": "opera",
+    "invalid_type": "B1",
+    "reason": "Email 'dup.member2@test.co.jp' is duplicated across source_id 000109 and 000121",
+    "expected_behavior": "both records excluded from sync-ready output"
+  },
+  {
+    "source_id": "000368",
+    "source_type": "nehops",
+    "invalid_type": "B1",
+    "reason": "Email 'dup.member3@mail.jp' is duplicated across source_id 000368 and 000464",
+    "expected_behavior": "both records excluded from sync-ready output"
+  },
+  {
+    "source_id": "000464",
+    "source_type": "nehops",
+    "invalid_type": "B1",
+    "reason": "Email 'dup.member3@mail.jp' is duplicated across source_id 000368 and 000464",
+    "expected_behavior": "both records excluded from sync-ready output"
+  },
+  {
+    "source_id": "000518",
+    "source_type": "nehops",
+    "invalid_type": "B2",
+    "reason": "emails[] contains duplicate address 'yamaguchi.eita0518@sample.net' within the same record",
+    "expected_behavior": "excluded from sync-ready output"
+  },
+  {
+    "source_id": "000562",
+    "source_type": "opera",
+    "invalid_type": "B2",
+    "reason": "emails[] contains duplicate address 'matsumoto.daisuke0562@test.co.jp' within the same record",
+    "expected_behavior": "excluded from sync-ready output"
+  },
+  {
+    "source_id": "000576",
+    "source_type": "bv_manager",
+    "invalid_type": "B2",
+    "reason": "emails[] contains duplicate address 'goto.hanako0576@mail.jp' within the same record",
+    "expected_behavior": "excluded from sync-ready output"
+  },
+  {
+    "source_id": "000113",
+    "source_type": "nehops",
+    "invalid_type": "C",
+    "reason": "Kana field contains non-hiragana characters: last_name_kana='ヤマダ'",
+    "expected_behavior": "excluded from sync-ready output"
+  },
+  {
+    "source_id": "000207",
+    "source_type": "bv_manager",
+    "invalid_type": "C",
+    "reason": "Kana field contains non-hiragana characters: first_name_kana='taro'",
+    "expected_behavior": "excluded from sync-ready output"
+  },
+  {
+    "source_id": "000300",
+    "source_type": "bv_manager",
+    "invalid_type": "C",
+    "reason": "Kana field contains non-hiragana characters: last_name_kana='山田'",
+    "expected_behavior": "excluded from sync-ready output"
+  },
+  {
+    "source_id": "000429",
+    "source_type": "bv_manager",
+    "invalid_type": "C",
+    "reason": "Kana field contains non-hiragana characters: last_name_kana='やまダ'",
+    "expected_behavior": "excluded from sync-ready output"
+  },
+  {
+    "source_id": "000465",
+    "source_type": "bv_manager",
+    "invalid_type": "C",
+    "reason": "Kana field contains non-hiragana characters: first_name_kana='123ひかる'",
+    "expected_behavior": "excluded from sync-ready output"
+  },
+  {
+    "source_id": "000451",
+    "source_type": "opera",
+    "invalid_type": "D",
+    "reason": "guest_type='member' but no membership record exists in membership.jsonl",
+    "expected_behavior": "excluded from sync-ready output"
+  },
+  {
+    "source_id": "000452",
+    "source_type": "nehops",
+    "invalid_type": "D",
+    "reason": "guest_type='member' but no membership record exists in membership.jsonl",
+    "expected_behavior": "excluded from sync-ready output"
+  },
+  {
+    "source_id": "000453",
+    "source_type": "bv_manager",
+    "invalid_type": "D",
+    "reason": "guest_type='member' but no membership record exists in membership.jsonl",
+    "expected_behavior": "excluded from sync-ready output"
+  },
+  {
+    "source_id": "000454",
+    "source_type": "opera",
+    "invalid_type": "D",
+    "reason": "guest_type='member' but no membership record exists in membership.jsonl",
+    "expected_behavior": "excluded from sync-ready output"
+  },
+  {
+    "source_id": "000455",
+    "source_type": "nehops",
+    "invalid_type": "D",
+    "reason": "guest_type='member' but no membership record exists in membership.jsonl",
+    "expected_behavior": "excluded from sync-ready output"
+  }
+]
