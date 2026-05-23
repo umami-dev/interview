@@ -1,0 +1,14 @@
+./data
+*etc
+*onnx
+notebooks/preprocessor
+uv.lock
+.env
+dist
+.DS_Store
+__pycache__
+*.log
+/outputs
+*.json
+.mypy_cache
+*.egg-info/
